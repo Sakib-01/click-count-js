@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercise</title>
+    <style>
+        .count{
+            width: 100%;
+            height: 100vh;
+            margin: 0px, auto;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            font-size: 4rem;
+            color: white;
+
+        }
+        .coin_img{
+            margin-top: 5rem;
+            width: 50px ;
+            height: 50px;
+        }
+        p{
+            margin-left: 18px;
+        }
+        #body{
+        background-image: url('https://i1.sndcdn.com/artworks-f8oqRaS9LaLl-0-t500x500.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+    </style>
+</head>
+<body id="body">
+
+<div class="count">
+    <img class="coin_img"  src="https://png.pngtree.com/png-vector/20190118/ourmid/pngtree-vector-coins-icon-png-image_327576.jpg" alt="coin">
+    <p id="coinCount">0</p>
+</div>
+  <!-- Your content here -->
+</body>
+    <script>
+        const body = document.getElementById('body')
+        const coinCount = document.getElementById('coinCount')
+        let clickCount=0;
+        body.addEventListener('click' ,function(){
+        clickCount++;
+        coinCount.textContent= clickCount;
+        })
+        console.log(ok);
+    </script>
+</body>
+</html>
